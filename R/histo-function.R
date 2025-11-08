@@ -30,7 +30,9 @@
 #' will be the one used within the ggplot2 colour call to get an outline around the bins
 #' \code{string}
 
-#' #' @importFrom dplyr %>%
+#' @import dplyr
+#' @importFrom dplyr %>%
+#' @import ggplot2
 
 #' @return This function returns a histogram disaplying the distribution of the variable of
 #' interest
@@ -75,15 +77,14 @@ histo_function <- function(dataset, var_of_interest, binwidth,
 
   return(histogram) # return your pretty histogram!
 }
+
 #' @examples
-#' EXAMPLES USE RANDOM DATASET (BELOW)
-#' ## create a random dataset that has an ID and value column where values are distributed normally
+#' EXAMPLES USE REPRODUCIBLE RANDOM DATASET (BELOW)
+#' set.seed(333)
 #' random_data <- data.frame(id = 1:132, values = rnorm(n=132, mean = 23, sd = 7))
 #'
 #' EXAMPLE 1: NO AESTHETICS APPLIED
-#' ## apply the histogram function, employing a bin width of 3 displaying the distribution of values
 #' histo_function(random_data, values, 3)
 #'
 #' EXAMPLE 2: AESTHETICS APPLIED
-#' ## corrected histogram column name to get a returned plot showing the distribution of height ranges
 #' histo_function(random_data, values, 5, fill_colour = "hotpink")

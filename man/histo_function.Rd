@@ -38,8 +38,7 @@ one used within the ggplot2 \code{fill} call. \code{string}}
 with ggplot2 in and change the appearance of the histogram outline around each bin. The
 default is \code{"black"}, resulting in the a black outline. Named since this colour
 will be the one used within the ggplot2 colour call to get an outline around the bins
-\code{string}
-#' @importFrom dplyr \%>\%}
+\code{string}}
 }
 \value{
 This function returns a histogram disaplying the distribution of the variable of
