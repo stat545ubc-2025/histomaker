@@ -16,29 +16,30 @@ histo_function(
 \item{dataset}{Dataframe containing the values of the variable of interest. Can be any
 length or size, but must contain the variable of interest column name and be in a
 dataframe format. Named dataset because I wanted it to be clear that we want a complete
-dataset into the function. \link{data.frame}}
+dataset into the function. \code{data.frame}}
 
 \item{var_of_interest}{Specific variable pulled from the data inputted in the first
 parameter. This parameter should be a list of values tied with the variable of interest.
 This can be inputted either directly through the use of data$var_of_interest notation, or
 assigned before the function to it's own stored variable. Named var_of_interest, because
 this is the variable of interest, but I wanted to shorten it slightly to make it more
-readible. Didn't want to do var_of_int since int can sometimes be used as integer \link{list}}
+readible. Didn't want to do var_of_int since int can sometimes be used as integer \code{list}}
 
 \item{binwidth}{This is a numeric value that will specify what bin width you'd like the
 histogram to employ. You can specify any width between 0 and the max value from the
-variable of interest. Named for what it represents, binwidth, for clarity. \link{numeric}}
+variable of interest. Named for what it represents, binwidth, for clarity. \code{numeric}}
 
 \item{fill_colour}{This is an aesthetic parameter where you can put any suitable colour
 with ggplot2 in and change the appearance of the histogram fill category. The default is
-dodgerblue3, resulting in the default ggplot2 colour scheme. Named since this colour will be the
-one used within the ggplot2 fill call. \link{string}}
+\code{"dodgerblue3"}, resulting in a blue fill colour. Named since this colour will be the
+one used within the ggplot2 \code{fill} call. \code{string}}
 
 \item{outline_colour}{This is an aesthetic parameter where you can put any suitable colour
 with ggplot2 in and change the appearance of the histogram outline around each bin. The
-default is NA, resulting in the default ggplot2 colour scheme. Named since this colour
+default is \code{"black"}, resulting in the a black outline. Named since this colour
 will be the one used within the ggplot2 colour call to get an outline around the bins
-\link{string}}
+\code{string}
+#' @importFrom dplyr \%>\%}
 }
 \value{
 This function returns a histogram disaplying the distribution of the variable of
