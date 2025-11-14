@@ -19,12 +19,12 @@ knitr::opts_chunk$set(
 <!-- badges: end -->
 
 The goal of histomaker is to easily plot a histogram using user-specified data and be able to 
-change aethetics efficiently!
+change aesthetics efficiently!
 
 ## Installation
 
 Package installation can be done directly by calling
-`devtools::install_github("kelsey-mcguire/histomaker")`
+`devtools::install_github("stat545ubc-2025/histomaker")`
 
 ## Example
 
