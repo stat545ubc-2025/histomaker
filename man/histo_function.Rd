@@ -49,6 +49,14 @@ This function takes in a dataset and a variable of interest to plot a
 histogram based on the user specified bin width. The variable must be numeric, but can
 have any range.
 }
+\examples{
+set.seed(333)
+random_data <- data.frame(id = 1:132, values = rnorm(n=132, mean = 23, sd = 7))
+
+histo_function(random_data, values, 3)
+
+histo_function(random_data, values, 5, fill_colour = "hotpink")
+}
 \author{
 Kelsey McGuire \email{kmcgu@student.ubc.ca} \cr
 }

@@ -33,11 +33,20 @@
 #' @import dplyr
 #' @importFrom dplyr %>%
 #' @import ggplot2
+#' @import rlang
 
 #' @return This function returns a histogram disaplying the distribution of the variable of
 #' interest
 
 #' @export
+
+#' @examples
+#' set.seed(333)
+#' random_data <- data.frame(id = 1:132, values = rnorm(n=132, mean = 23, sd = 7))
+#'
+#' histo_function(random_data, values, 3)
+#'
+#' histo_function(random_data, values, 5, fill_colour = "hotpink")
 
 histo_function <- function(dataset, var_of_interest, binwidth,
                            fill_colour = "dodgerblue3", outline_colour = "black") {
@@ -77,14 +86,3 @@ histo_function <- function(dataset, var_of_interest, binwidth,
 
   return(histogram) # return your pretty histogram!
 }
-
-#' @examples
-#' EXAMPLES USE REPRODUCIBLE RANDOM DATASET (BELOW)
-#' set.seed(333)
-#' random_data <- data.frame(id = 1:132, values = rnorm(n=132, mean = 23, sd = 7))
-#'
-#' EXAMPLE 1: NO AESTHETICS APPLIED
-#' histo_function(random_data, values, 3)
-#'
-#' EXAMPLE 2: AESTHETICS APPLIED
-#' histo_function(random_data, values, 5, fill_colour = "hotpink")
