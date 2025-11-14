@@ -6,17 +6,18 @@
 
 <!-- badges: end -->
 
-The goal of histomaker is to easily plot a histogram using user-specified data and be able to change aethetics efficiently!
+The goal of histomaker is to easily plot a histogram using user-specified data and be able to change aesthetics efficiently!
 
 ## Installation
 
-Package installation can be done directly by calling `devtools::install_github("kelsey-mcguire/histomaker")`
+Package installation can be done directly by calling `devtools::install_github("stat545ubc-2025/histomaker")`
 
 ## Example
 
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
+install_github("stat545ubc-2025/histomaker")`
 library(histomaker)
 
 # EXAMPLES USE REPRODUCIBLE RANDOM DATASET (BELOW)
