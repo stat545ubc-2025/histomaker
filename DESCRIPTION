@@ -1,6 +1,6 @@
 Package: histomaker
 Title: Histogram Plotting Function
-Version: 0.1.0
+Version: 1.0.0
 Authors@R: 
     person("Kelsey", "McGuire", , "kelsey.mcguire@ubc.com", role = c("aut", "cre"))
 Description: This function takes in a dataset and a variable of interest to plot a histogram based on user specified inputs, including variable of interests, fill colours, and outline colours.
